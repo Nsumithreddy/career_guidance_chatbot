@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
+import { API_BASE } from "./config"; 
 
 // Stable session per user/browser
 const sessionId = (() => {
@@ -19,7 +20,7 @@ export default function App() {
 
   // Load chat history
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/chatmessages/", {
+    fetch(`${API_BASE}/chatmessages/`, {
       headers: { "X-Session-Id": sessionId },
     })
       .then((r) => r.json())
@@ -46,7 +47,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/chatmessages/", {
+      const res = await fetch(`${API_BASE}/chatmessages/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
