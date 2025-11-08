@@ -111,9 +111,10 @@ app.add_middleware(
     # ...
 )
 
-Author
-Nagam Sumith Reddy
+Author:
+ Nagam Sumith Reddy
   * Email: sumithreddynagam23@gmail.com
   * GitHub: [Nsumithreddy](https://www.google.com/search?q=httpsClick%253A//github.com/Nsumithreddy)
   * LinkedIn: [www.linkedin.com/in/sumithreddy-n]
   * Portfolio: [Your Portfolio Website]
+
