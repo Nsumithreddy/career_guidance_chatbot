@@ -124,7 +124,7 @@ def delete_session_history(x_session_id: str = Header(...)):
 # CORS middleware setup
 origins = [
     "http://localhost:5173",
-    "https://your-vercel-app.vercel.app", 
+    "https://career-guidance-chat.vercel.app", 
 ]
 app.add_middleware(
     CORSMiddleware,#this is a class we import from fastapi.middleware.cors
