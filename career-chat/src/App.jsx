@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import { API_BASE } from "./config"; 
+import { API_BASE } from "./config";
 
 // Stable session per user/browser
 const sessionId = (() => {
