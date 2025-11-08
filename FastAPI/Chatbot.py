@@ -122,16 +122,15 @@ def delete_session_history(x_session_id: str = Header(...)):
     return {"ok": True}
     
 # CORS middleware setup
-origins = [
-    "http://localhost:5173",
-    "https://career-guidance-chat.vercel.app", 
-]
 app.add_middleware(
-    CORSMiddleware,#this is a class we import from fastapi.middleware.cors
-    allow_origins = origins,
-    allow_credentials = True,
-    allow_methods = ["*"],#this means all methods like get, post, put, delete are allowed
-    allow_headers = ["*"],
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://career-guidance-chatbot.vercel.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 #Logging Middleware 
