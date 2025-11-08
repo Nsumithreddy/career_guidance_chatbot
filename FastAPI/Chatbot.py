@@ -12,7 +12,7 @@ from uuid import uuid4#to generate unique session ids
 
 GEMINI_MODEL = "gemini-2.5-flash"
 load_dotenv()
-GeminiApi_key = os.getenv("GOOGLE_API_KEY")
+GeminiApi_key = os.getenv("GeminiApi_key")
 if not GeminiApi_key:
     print("Error: Google API key not found, Please check .env file")
 else:
